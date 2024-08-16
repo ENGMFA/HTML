@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to us through the following contact methods.</p>
+        </section>
+        <div class="container-contact">
+            <div class="">
+            <img class="contact-img-1" src="./img/human-hand.webp" alt="human-hand">
+            </div>
+            <div class="form-inputs">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="Enter Your First Name" id="firstname" required/>
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Enter Your Last Name" id="lastname" required/>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="xxxx@domain.com" required/>
+                <label for="subject">Subject</label>
+                <input type="text" name="" id="subject" placeholder="Your Subject"/>
+                <label for="textarea">Message</label>
+                <textarea name="" id="textarea" rows="5">
+                </textarea>
+                <button class="btn" type="submit" onclick="myFunction()">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span>2024</span> All Rights Reserved</p>
+    </footer>
+    <script>
+        function myFunction() {
+            confirm("Are You sure filled the required fields")
+            alert("Sorry did not activated yet!");
+        }
+        </script>
+</body>
+</html>
